@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Customer API",
+      "version": "1.0.0"
+    },
+    "paths": {
+      "/api/customers": {
+        "get": {
+          "summary": "Get all customers",
+          "responses": {
+            "200": {
+              "description": "A list of customers"
+            }
+          }
+        }
+      },
+      "/api/customers/summary/gender": {
+        "get": {
+          "summary": "Get summary by gender",
+          "responses": {
+            "200": {
+              "description": "Gender breakdown"
+            }
+          }
+        }
+      },
+      "/api/customers/summary/location": {
+        "get": {
+          "summary": "Get summary by location",
+          "responses": {
+            "200": {
+              "description": "Location breakdown"
+            }
+          }
+        }
+      }
+    }
+  }
