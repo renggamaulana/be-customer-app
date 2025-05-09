@@ -10,7 +10,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors()); // Ini sudah benar untuk akses global
+app.use(cors()); 
   
 app.use(express.json());
 // routes
@@ -20,5 +20,5 @@ app.get('/health-check', (req, res) => {
 app.use('/api/customers', customerRoutes);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3080;
 app.listen(process.env.PORT, () => console.log(`Server running on port ${PORT}`));
