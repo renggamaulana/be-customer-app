@@ -15,7 +15,7 @@
           }
         }
       },
-      "/api/customers/summary/gender": {
+      "/api/customers/gender": {
         "get": {
           "summary": "Get summary by gender",
           "responses": {
@@ -25,12 +25,22 @@
           }
         }
       },
-      "/api/customers/summary/location": {
+      "/api/customers/location": {
         "get": {
           "summary": "Get summary by location",
           "responses": {
             "200": {
               "description": "Location breakdown"
+            }
+          }
+        }
+      },
+      "/api/customers/location-type": {
+        "get": {
+          "summary": "Get summary by location type",
+          "responses": {
+            "200": {
+              "description": "Location type breakdown"
             }
           }
         }
