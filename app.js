@@ -21,4 +21,4 @@ app.use('/api/customers', customerRoutes);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 const PORT = process.env.PORT || 3000;
-app.listen(process.env.PORT, () => console.log(`Server running on port ${process.env.PORT}`));
+app.listen(process.env.PORT, () => console.log(`Server running on port ${PORT}`));
